@@ -1,7 +1,93 @@
 #include <iostream>
 using namespace std;
 
-int main() {
-cout << "Hello, Word!" ;
-return 0;
+int main()
+{
+    bool b;   // Deklarasi variabel dengan nama "b" bertipe data boolean
+    int i;    // Deklarasi variabel dengan nama "i" bertipe data int
+    float f;  // Deklarasi variabel dengan nama "f" bertipe data float
+    double d; // Deklarasi variabel dengan nama "d" bertipe data double
+    char c;   // Deklarasi variabel dengan nama "c" bertipe data char
+    string s; // Deklarasi variabel dengan nama "s" bertipe data string
+    return 0;
+}
+
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    bool b = true;             // inisialisasi variabel b dengan nilai kebenaran "true"
+    int i = 5;                 // inisialisasi variabel i dengan nilai bilangan butat 18
+    float f = 3.14;            // inisialisasi variabel f dengan nilai desimal 3.14
+    double d = 3.141592;       // inisialisasi variabel d dengan nilai desimal 3.141592
+    char c = 'A';              // inisialisasi variabel c dengan karakter A
+    string s = "Selamat Pagi"; // inisialisasi variabel s dengan kata Selamat Pagi
+    return 0;
+}
+
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int angka1, angka2;
+    char operasi;
+ 
+    cout << "Masukkan angka pertama : ";
+    cin >> angka1;
+    cout << "Masukkan angka kedua : ";
+    cin >> angka2;
+    cout << "Masukkan jenis operasi (+, -, *, /) : ";
+ 
+    cin >> operasi;
+    if (operasi == '+')
+    {
+        cout << "Hasil = " << angka1 + angka2;
+    }
+    else if (operasi == '-')
+    {
+        cout << "Hasil = " << angka1 - angka2;
+    }
+    else if (operasi == '*')
+    {
+        cout << "Hasil = " << angka1 * angka2;
+    }
+    else if (operasi = '/')
+    {
+        if (angka2 == 0)
+        {
+            cout << "Hasil = " << angka1 / angka2;
+        }
+        else
+        {
+            cout << "Pembagi tidak boleh bernilai 0";
+        }
+    }
+    else
+    {
+        cout << "Operasi tidak valid";
+    }
+    return 0;
+}
+
+
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    string nama;
+    char kelas;
+    int umur;
+    float nilai;
+    double tinggi;
+    bool lulus = true;
+
+    getline(cin, nama);
+
+    cin >> kelas >> umur >> nilai >> tinggi;
+    cout << nama << " " << kelas << " " << umur << " " << nilai << " " << tinggi << " " << lulus << endl;
+
+    return 0;
 }
